@@ -10,7 +10,7 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckod
 RUN tar -xvzf geckodriver*
 RUN chmod +x geckodriver
 
-FROM jlesage/firefox:v25.04.1
+FROM jlesage/firefox:v25.07.1
 
 RUN apk update && \
       apk add wget
