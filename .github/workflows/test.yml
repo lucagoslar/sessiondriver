@@ -31,7 +31,7 @@ jobs:
       - name: Check Health
         run: timeout 60s sh -c 'until docker ps | grep sessiondriver-firefox | grep -q healthy; do echo "Waiting for container to be healthy..."; sleep 2; done'
 
-      - uses: dtolnay/rust-toolchain@1.88.0
+      - uses: dtolnay/rust-toolchain@1.92.0
 
       - name: Test
         run: cargo test --verbose

@@ -1,20 +1,20 @@
 [package]
 name = "sessiondriver"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 
 [dependencies]
-tokio = { version = "= 1.46.1", features = ["rt-multi-thread", "tokio-macros", "tracing", "process", "signal", "sync"] }
-log = "= 0.4.27"
+tokio = { version = "= 1.49.0", features = ["rt-multi-thread", "tokio-macros", "tracing", "process", "signal", "sync"] }
+log = "= 0.4.29"
 env_logger = "= 0.11.8"
-clap = { version = "= 4.5.41", features = ["derive", "env"] }
-axum = { version = "= 0.8.4", features = ["macros"] }
-humantime = "= 2.2.0"
-async-lock = "= 3.4.0"
-reqwest = { version = "= 0.12.22", features = ["stream", "json", "rustls-tls", "charset", "http2"], default-features = false }
-serde = { version = "= 1.0.219", features = ["derive"] }
-serde_json = "= 1.0.140"
-uuid = { version = "= 1.17.0", features = ["serde"] }
+clap = { version = "= 4.5.54", features = ["derive", "env"] }
+axum = { version = "= 0.8.8", features = ["macros"] }
+humantime = "= 2.3.0"
+async-lock = "= 3.4.2"
+reqwest = { version = "= 0.13.1", features = ["stream", "json", "rustls", "charset", "http2"], default-features = false }
+serde = { version = "= 1.0.228", features = ["derive"] }
+serde_json = "= 1.0.149"
+uuid = { version = "= 1.19.0", features = ["serde"] }
 fantoccini = { version = "= 0.22.0", features = ["rustls-tls"], default-features = false }
-deadpool = "= 0.12.2"
-rustls = { version = "= 0.23.29", features = ["ring"] }
+deadpool = "= 0.12.3"
+rustls = { version = "= 0.23.36", features = ["ring"] }
